@@ -17,7 +17,7 @@ int main() {
 }
 
 string caesar(int key, string plaintext) {
-    for(int i = 0; plaintext[i] != '\0'; i++) {
+    for (int i = 0; plaintext[i] != '\0'; i++) {
         if (plaintext[i] >= 'A' && plaintext[i] <= 'Z') {         // 大寫
             plaintext[i] += key;
             if (plaintext[i] > 'Z') {
